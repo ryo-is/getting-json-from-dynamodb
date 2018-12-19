@@ -1,5 +1,13 @@
 # vue-app-start-source
 
+## Project Description
+
+これはVueアプリケーションを新規構築する際の初期設定済みのソースコードです。
+
+このリポジトリをCloneしたのち、アプリケーションのリポジトリと紐づけてください。
+
+**Cloneしてそのままソースコードを変更しないようにしてください**
+
 ## Project setup
 ```
 yarn install
@@ -15,25 +23,7 @@ yarn run serve
 yarn run build
 ```
 
-### Run your tests
-```
-yarn run test
-```
-
 ### Lints and fixes files
 ```
 yarn run lint
 ```
-
-### Run your end-to-end tests
-```
-yarn run test:e2e
-```
-
-### Run your unit tests
-```
-yarn run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
