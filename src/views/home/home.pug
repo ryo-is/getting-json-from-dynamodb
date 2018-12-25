@@ -1,1 +1,46 @@
 .home
+  .title Getting JSON from DynamoDB
+  .form
+    .aws-credential-area.area-style
+      .area-title AWS Credentials
+      el-row.input-content
+        el-col(:span="10").text AccessKey
+        el-col(:span="12")
+          el-input.input(v-model="accessKey")
+      el-row.input-content
+        el-col(:span="10").text SecretAccessKey
+        el-col(:span="12")
+          el-input.input(v-model="secretAccessKey" type="password")
+      el-row.input-content
+        el-col(:span="10").text Region
+        el-col(:span="12")
+          el-input.input(v-model="region")
+    .table-info-area.area-style
+      .area-title DyanmoDB Table Info
+      el-row.input-content
+        el-col(:span="10").text TableName
+        el-col(:span="12")
+          el-input.input(v-model="tableName")
+      el-row.input-content
+        el-col(:span="10").text PartitionKey
+        el-col(:span="12")
+          el-input.input(v-model="partitionKey")
+      el-row.input-content
+        el-col(:span="10").text SortKey
+        el-col(:span="12")
+          el-input.input(v-model="sortKey")
+    .value-info-area.area-style
+      .area-title Value Info
+      el-row.input-content
+        el-col(:span="10").text TargetPartitionKey
+        el-col(:span="12")
+          el-input.input(v-model="targetPartitionKey")
+      el-row.input-content
+        el-col(:span="10").text FromTime
+        el-col(:span="12")
+          el-input.input(v-model="fromTime")
+      el-row.input-content
+        el-col(:span="10").text ToTime
+        el-col(:span="12")
+          el-input.input(v-model="toTime")
+    el-button.button(type="primary" @click="getDynamoDBData") Get JSON
