@@ -1,12 +1,8 @@
-# vue-app-start-source
+# getting-json-from-dynamodb
 
 ## Project Description
 
-これはVueアプリケーションを新規構築する際の初期設定済みのソースコードです。
-
-このリポジトリをCloneしたのち、アプリケーションのリポジトリと紐づけてください。
-
-**Cloneしてそのままソースコードを変更しないようにしてください**
+DynamoDBからセンサーデータを取得して、JSONファイルを生成するアプリ
 
 ## Project setup
 ```
