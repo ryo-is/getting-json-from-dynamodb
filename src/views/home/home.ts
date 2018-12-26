@@ -2,19 +2,18 @@ import { Component, Vue } from "vue-property-decorator";
 import AWS from "aws-sdk";
 import { DocumentClient } from "aws-sdk/lib/dynamodb/document_client";
 import json2csv from "json2csv";
-import { strict } from 'assert';
 
 @Component({})
 export default class Home extends Vue {
-  public accessKey: string = "AKIAIIGXN5PADEBRFBCQ";
-  public fromTime: string = "2018-12-26T03:08:31+09:00";
-  public partitionKey: string = "ID";
-  public region: string = "ap-northeast-1";
-  public secretAccessKey: string = "aMdlOodpajqjWuhWygKydTqKxG+6FHMNbKVYoySU";
-  public sortKey: string = "record_time";
-  public tableName: string = "iot_dummy_data";
-  public targetPartitionKey: string = "b001";
-  public toTime: string = "2018-12-26T09:08:31+09:00";
+  public accessKey: string = "";
+  public fromTime: string = "";
+  public partitionKey: string = "";
+  public region: string = "";
+  public secretAccessKey: string = "";
+  public sortKey: string = "";
+  public tableName: string = "";
+  public targetPartitionKey: string = "";
+  public toTime: string = "";
 
   public async getDynamoDBData() {
     const self = this;
